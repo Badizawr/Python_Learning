@@ -7,7 +7,7 @@
 a = int(input('введите число ->'))
 
 def numprint(x):
-     x = list(range(-x, x+1))
+     x = list(range(x, x+1))
      print(x)
 
 numprint(a)
