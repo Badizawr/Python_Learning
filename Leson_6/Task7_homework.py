@@ -83,7 +83,7 @@ while True:
     
     if game_over:
         screen.fill(black)
-        front = pygame.font.SysFont('Tahoma', 280)
+        front = pygame.font.SysFont('Tahoma', 180)
         text1 = front.render(game_over, True, white)
         text_rect = text1.get_rect()
         text_x = screen.get_width()/2 - text_rect.width/2
