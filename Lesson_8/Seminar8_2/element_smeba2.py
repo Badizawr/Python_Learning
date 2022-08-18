@@ -6,8 +6,8 @@ import izmenit as izm
 def izmin():
     print(pr.prosm())
 
-    with open('E:\Programming\Visual_Studio_Code\Python_seminars_replay\Seminar8_2\sleSH2_file.txt', 'r', encoding='utf-8') as file:
-            with open("E:\Programming\Visual_Studio_Code\Python_seminars_replay\Seminar8_2\ееempl.txt", "a+",encoding='utf-8') as links:        
+    with open('D:\Python_Learning\Lesson_8\Seminar8_2\sleSH2_file.txt', 'r', encoding='utf-8') as file:
+            with open("D:\Python_Learning\Lesson_8\Seminar8_2\ееempl.txt", "a+",encoding='utf-8') as links:        
              
                 d = izm.b
                 for line in file:
@@ -15,5 +15,5 @@ def izmin():
                     if d not in line.strip("\n"):
                         links.write(line + '\n' )                                                          
 
-    os.replace("E:\Programming\Visual_Studio_Code\Python_seminars_replay\Seminar8_2\ееempl.txt",  'E:\Programming\Visual_Studio_Code\Python_seminars_replay\Seminar8_2\sleSH2_file.txt')
+    os.replace("D:\Python_Learning\Lesson_8\Seminar8_2\ееempl.txt",  'D:\Python_Learning\Lesson_8\Seminar8_2\sleSH2_file.txt')
     print(pr.prosm())   # переписал изменяемый файл отдельно     

@@ -59,7 +59,7 @@ def wef():
                     + str(otdel[3]) +  str('; ID Должности: ') + str(3) + str(' ') + str(doljnost[3])
                 print(f'Идентификатор Имя: {sot}; ID отдела: {otdel[3]}; ID Должности:{doljnost[3]}')
          
-        with open('E:\Programming\Visual_Studio_Code\Python_seminars_replay\Seminar8_2\sleSH_file.txt', 'a+', encoding='utf-8') as file:
+        with open('D:\Python_Learning\Lesson_8\Seminar8_2\sleSH_file.txt', 'a+', encoding='utf-8') as file:
             # data = file.read() 
     
             if count == 1 : 
@@ -72,8 +72,8 @@ def wef():
                 i +=1
                 file.write(', '.join([otdel3])+ '\n')
             
-        inputFile = open('E:\Programming\Visual_Studio_Code\Python_seminars_replay\Seminar8_2\sleSH_file.txt', "r", encoding='utf-8')
-        outputFile = open('E:\Programming\Visual_Studio_Code\Python_seminars_replay\Seminar8_2\sleSH2_file.txt', "w", encoding='utf-8')
+        inputFile = open('D:\Python_Learning\Lesson_8\Seminar8_2\sleSH_file.txt', "r", encoding='utf-8')
+        outputFile = open('D:\Python_Learning\Lesson_8\Seminar8_2\sleSH2_file.txt', "w", encoding='utf-8')
     
 
         lines_seen_so_far = set() # будем записывать в файл только уникальные данные

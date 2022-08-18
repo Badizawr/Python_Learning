@@ -10,9 +10,9 @@ import element_smeba2 as elim
 
 def izm():
     print(pr.prosm())
-    with open('E:\Programming\Visual_Studio_Code\Python_seminars_replay\Seminar8_2\sleSH2_file.txt', 'r', encoding='utf-8') as file:
-        with open("E:\Programming\Visual_Studio_Code\Python_seminars_replay\Seminar8_2\ееemp.txt", "w",encoding='utf-8') as dexter:
-           # with open("E:\Programming\Visual_Studio_Code\Python_seminars_replay\Seminar8_2\ееempl.txt", "a+",encoding='utf-8') as links:
+    with open('D:\Python_Learning\Lesson_8\Seminar8_2\sleSH2_file.txt', 'r', encoding='utf-8') as file:
+        with open("D:\Python_Learning\Lesson_8\Seminar8_2\ееemp.txt", "w",encoding='utf-8') as dexter:
+           # with open("D:\Python_Learning\Lesson_8\Seminar8_2\ееempl.txt", "a+",encoding='utf-8') as links:
              
                 x  =  prover.menu_proverka_izm()
                 x = str(x)
@@ -25,13 +25,13 @@ def izm():
                     if x in line.strip("\n"):
                         dexter.write(line)
    
-    os.replace("E:\Programming\Visual_Studio_Code\Python_seminars_replay\Seminar8_2\ееemp.txt",  'E:\Programming\Visual_Studio_Code\Python_seminars_replay\Seminar8_2\sleSH3_file.txt')
+    os.replace("D:\Python_Learning\Lesson_8\Seminar8_2\ееemp.txt",  'E:\Programming\Visual_Studio_Code\Python_seminars_replay\Seminar8_2\sleSH3_file.txt')
     print(pr.prosm())   # переписал изменяемый файл отдельно     
     elim.izmin()  
 
     data = []
-    with open('E:\Programming\Visual_Studio_Code\Python_seminars_replay\Seminar8_2\sleSH3_file.txt', 'r', encoding='utf-8') as files:  
-        with open("E:\Programming\Visual_Studio_Code\Python_seminars_replay\Seminar8_2\ееemp.txt", "w",encoding='utf-8') as dexters:
+    with open('D:\Python_Learning\Lesson_8\Seminar8_2\sleSH3_file.txt', 'r', encoding='utf-8') as files:  
+        with open("D:\Python_Learning\Lesson_8\Seminar8_2\ееemp.txt", "w",encoding='utf-8') as dexters:
             data = files.read().split()
             red = []
             slovar1 = {i : data[i] for i in range(len(data))} 
@@ -45,7 +45,7 @@ def izm():
             for i in red:      
                     #     # if x not in i.strip("\n"):               
                 dexters.write(', '.join([i])+ ' ')       
-    os.replace("E:\Programming\Visual_Studio_Code\Python_seminars_replay\Seminar8_2\ееemp.txt",  'E:\Programming\Visual_Studio_Code\Python_seminars_replay\Seminar8_2\sleSH3_file.txt')
+    os.replace("D:\Python_Learning\Lesson_8\Seminar8_2\ееemp.txt",  'D:\Python_Learning\Lesson_8\Seminar8_2\sleSH3_file.txt')
     print(pr.prosm())  # перенесли в 3 файл отдельный разобранный который  нужно добавить м изменениями нашими
     files.close()
 

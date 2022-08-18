@@ -1,3 +1,3 @@
-import controller as c #as - как импортировать контроллер как с
+import controller #as - как импортировать контроллер как с
 
-c.button_click()
+controller.button_click()
